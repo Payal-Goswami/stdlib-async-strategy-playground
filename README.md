@@ -16,7 +16,6 @@ Against a task set with a theoretical sum of **2000ms**:
 
 ## 💡 Technical Highlights
 - **Custom `eachLimit` Implementation**: Demonstrates core concurrency management logic.
-- **Result Collection**: Includes a `mapLimit` prototype for data processing pipelines.
 
 ## ⚙️ Installation & Usage
 
