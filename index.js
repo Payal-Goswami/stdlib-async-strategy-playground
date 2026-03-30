@@ -4,7 +4,6 @@
 * Author: Payal Goswami
 */
 
-var forEach = require('@stdlib/utils-async-for-each');
 var parallel = require('@stdlib/utils-async-parallel');
 var format = require('@stdlib/string-format');
 
