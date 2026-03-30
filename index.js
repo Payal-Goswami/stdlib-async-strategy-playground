@@ -8,7 +8,6 @@ var forEach = require('@stdlib/utils/async/for-each');
 var parallel = require('@stdlib/utils/async/parallel');
 var format = require('@stdlib/string/format');
 var setTimeout = require('@stdlib/timers/set-timeout');
--
 var tasks = [600, 200, 800, 300, 100];
 
 function mockWorker(duration, index, next) {
