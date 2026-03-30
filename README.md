@@ -1,26 +1,26 @@
 # 🚀 stdlib Async Strategy Playground
 
-This project is a showcase developed for my **GSoC 2026 proposal**.
+Technical showcase developed for my **GSoC 2026 proposal (Idea #9: Asynchronous Utilities)**.
 
-## 🔍 What This Project Demonstrates
+## 🔍 The Project
+This demo compares three asynchronous execution strategies to justify the implementation of `mapLimit`, `eachLimit`, and `retry` within the `stdlib` ecosystem.
 
-This demo compares three asynchronous execution strategies:
+## 📊 Performance Results
+Against a task set with a theoretical sum of **2000ms**:
 
-- **Sequential (Series)** → Safe but slow  
-- **Parallel** → Fast but resource-heavy  
-- **Limited Concurrency (Custom)** → Balanced approach  
+| Strategy | Logic | Observed Time | Verdict |
+| :--- | :--- | :--- | :--- |
+| **Sequential** | `eachLimit(tasks, 1)` | **~2050ms** | Safest, but slow. |
+| **Full Parallel** | `parallel()` | **~815ms** | Fastest, but resource-heavy. |
+| **Limited** | `eachLimit(tasks, 2)` | **~1040ms** | **The Sweet Spot.** Controlled throughput. |
 
-## 💡 Why This Matters
+## 💡 Technical Highlights
+- **Custom `eachLimit` Implementation**: Demonstrates core concurrency management logic.
+- **Result Collection**: Includes a `mapLimit` prototype for data processing pipelines.
 
-Efficient async execution is critical in:
+## ⚙️ Installation & Usage
 
-- Backend systems  
-- Task queues  
-- Data pipelines  
-
-Uncontrolled parallelism can overwhelm systems, while strict sequencing is inefficient.
-
-## ⚙️ Installation
-
-```bash
-npm install
+1. **Clone and Install:**
+   ```bash
+   npm install
+   npm start
