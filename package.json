@@ -4,9 +4,9 @@
   "description": "GSoC Showcase: Comparing Async Execution Strategies in stdlib",
   "main": "index.js",
   "dependencies": {
-    "@stdlib/utils/async/for-each": "^0.2.2",
-    "@stdlib/utils/async/parallel": "^0.2.2",
-    "@stdlib/string/format": "^0.2.2"
+    "@stdlib/utils-async-for-each": "latest",
+    "@stdlib/utils-async-parallel": "latest",
+    "@stdlib/string-format": "latest"
   },
   "scripts": {
     "start": "node index.js"
